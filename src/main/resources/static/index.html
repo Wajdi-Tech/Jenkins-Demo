@@ -1,58 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Spring Boot HTML Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenkins CI/CD Demo</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #007bff, #00c6ff);
+        color: #fff;
         margin: 0;
         padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 40px 60px;
+        border-radius: 20px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        backdrop-filter: blur(10px);
+        animation: fadeIn 1.2s ease-in-out;
       }
 
       h1 {
-        text-align: center;
-        color: #333;
-        margin-top: 100px;
+        margin-bottom: 15px;
+        font-size: 2rem;
+        color: #ffffff;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
       }
 
       p {
-        text-align: center;
-        color: #666;
-      }
-
-      .container {
-        text-align: center;
-        margin-top: 20px;
+        color: #f1f1f1;
+        margin-bottom: 15px;
+        line-height: 1.5;
       }
 
       .btn {
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
+        display: inline-block;
+        background-color: #ffffff;
+        color: #007bff;
+        padding: 10px 25px;
+        font-weight: bold;
+        border-radius: 50px;
         text-decoration: none;
-        border-radius: 5px;
+        transition: all 0.3s ease;
       }
 
       .btn:hover {
         background-color: #0056b3;
+        color: #fff;
+        transform: translateY(-2px);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     </style>
   </head>
+
   <body>
-    <div class="container">
-      <h1>Welcome to Jenkins Tutorial for Master DevOps and Cloud!</h1>
+    <div class="card">
+      <h1>🚀 Jenkins CI/CD Pipeline Demo</h1>
       <p>
-        Welcome to Jenkins CI/CD Pipeline for Spring Boot Microservice
-        application deployed to Kubernetes using Helm
+        This Spring Boot microservice is built and deployed automatically using
+        <strong>Jenkins</strong>, <strong>Docker</strong> and
+        <strong>Kubernetes (K3s)</strong>.
       </p>
       <p>
-        Docker - Minikube - Kubectl - Maven - SonarQube - Trivy - ArgoCD - Slack
-        - Webhook - ngRok - Jenkins - Helm
+        Integrated tools: Maven • SonarQube • Trivy • Helm • ArgoCD • Slack •
+        Webhooks
       </p>
-      <div>
-        <a class="btn" href="#">Learn More</a>
-      </div>
+      <a class="btn" href="#">Explore Project</a>
     </div>
   </body>
 </html>
